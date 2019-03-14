@@ -2,4 +2,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.conteiner {
+  max-width: 940px;
+  margin: auto;
+}
 /*# sourceMappingURL=style.css.map */
