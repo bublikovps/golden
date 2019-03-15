@@ -1,0 +1,42 @@
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../fonts/Montserrat-ExtraBold.eot');
+  src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+  url('../fonts/') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+    
+@font-face {
+  font-family: 'Droid Serif Italic';
+  src: url('../fonts/DroidSerif-Italic.eot');
+  src: url('../fonts/DroidSerif-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DroidSerif-Italic.woff') format('woff'),
+  url('../fonts/DroidSerif-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@mixin Regular {
+  font-family: 'Montserrat Regular', sans-serif;  
+}
+
+@mixin Bold {
+  font-family: 'Montserrat Bold', sans-serif;  
+}
+
+@mixin Italic {
+  font-family: 'Droid Serif Italic', sans-serif;  
+}

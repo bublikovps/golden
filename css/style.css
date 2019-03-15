@@ -3,8 +3,104 @@
           box-sizing: border-box;
 }
 
+header {
+  background: url(../img/Background-Image.jpg) center no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
 .conteiner {
   max-width: 940px;
   margin: auto;
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Droid Serif Italic';
+  src: url("../fonts/DroidSerif-Italic.eot");
+  src: url("../fonts/DroidSerif-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSerif-Italic.woff") format("woff"), url("../fonts/DroidSerif-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat Regular', sans-serif;
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+  padding-top: 44px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  padding-left: 40px;
+}
+
+.navbar ul a {
+  text-transform: uppercase;
+  font-family: 'Montserrat Regular', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.menu-button__line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fed136;
+  margin: 2px 0;
 }
 /*# sourceMappingURL=style.css.map */
