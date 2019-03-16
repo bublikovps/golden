@@ -11,8 +11,14 @@ header {
 }
 
 .conteiner {
-  max-width: 940px;
-  margin: auto;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992) {
+  .conteiner {
+    max-width: 960px;
+  }
 }
 
 @font-face {
@@ -43,6 +49,19 @@ body {
   font-family: 'Montserrat Regular', sans-serif;
 }
 
+.button {
+  display: block;
+  background: #fed136;
+  border: none;
+}
+
+.button-a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat Bold', sans-serif;
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,24 +70,24 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 32px;
-  padding-top: 44px;
+  padding: 44px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.navbar ul {
+.navbar-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-.navbar ul li {
+.navbar__items {
   padding-left: 40px;
 }
 
-.navbar ul a {
+.navbar__items__a {
   text-transform: uppercase;
   font-family: 'Montserrat Regular', sans-serif;
   font-size: 14px;
@@ -76,10 +95,14 @@ body {
   text-decoration: none;
 }
 
+.navbar__items__a:hover {
+  color: #fed136;
+}
+
 .menu-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  position: relative;
+  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -94,6 +117,8 @@ body {
   width: 30px;
   height: 30px;
   border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .menu-button__line {
@@ -101,6 +126,75 @@ body {
   width: 20px;
   height: 2px;
   background-color: #fed136;
-  margin: 2px 0;
+  margin: 4px 0;
+}
+
+@media (max-width: 725px) {
+  .navbar__items {
+    display: none;
+  }
+  .menu__button {
+    display: inline-block;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding-top: 168px;
+}
+
+.hero-subtitle {
+  display: block;
+  font-family: 'Droid Serif Italic', sans-serif;
+  color: #fff;
+  font-size: 40px;
+}
+
+.hero-title {
+  display: block;
+  font-family: 'Montserrat Bold', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.button-hero {
+  display: block;
+  border: 1px solid #fed136;
+  border-radius: 3px;
+  background: #fed136;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 25px 51px;
+}
+
+@media (max-width: 460px) {
+  .hero {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 340px) {
+  .hero {
+    padding-top: 40px;
+  }
+  .hero-subtitle {
+    font-size: 30px;
+  }
+  .hero-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 260px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-subtitle {
+    font-size: 30px;
+  }
+  .hero-title {
+    font-size: 45px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

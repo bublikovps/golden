@@ -3,23 +3,29 @@
     display: flex
     align-items: center
     height: 32px
-    padding-top: 44px
+    padding: 44px
     justify-content: space-between
 
-  ul
+  &-item
    display: flex
    list-style: none
-   li
+  &__items
      padding-left: 40px
-   a
+  &__items__a
        text-transform: uppercase
        +Regular
        font-size: 14px
        color: #fff
        text-decoration: none
+  &__items__a:hover
+     color: #fed136
+
+
 .menu
    &-button
-    display: flex
+    display: none
+    position: relative
+    cursor: pointer
     flex-direction: column
     align-items: center
     justify-content: center
@@ -27,13 +33,25 @@
     width: 30px
     height: 30px
     border: none
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+
      
     &__line
       display: block
       width: 20px
       height: 2px
       background-color: #fed136
-      margin: 2px 0
-      
-.logo
-  img
+      margin: 4px 0
+
+@media (max-width: 725px)
+  .navbar
+    &__items
+      display: none
+  .menu__button
+    display: inline-block
+
+
+
+

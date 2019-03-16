@@ -1,0 +1,42 @@
+.hero
+  text-align: center
+  padding-top: 168px
+.hero-subtitle
+  display: block
+  +Italic
+  color:#fff
+  font-size: 40px
+.hero-title
+  display: block
+  +Bold
+  color:#fff
+  text-transform: uppercase
+  font-size: 70px
+
+.button-hero
+  display: block
+  border: 1px solid $yellow
+  border-radius: 3px
+  background: $yellow
+  font-size: 18px
+  margin: 0 auto
+  padding: 25px 51px
+
+@media (max-width: 460px)
+  .hero 
+    padding-top: 80px;  
+
+@media (max-width: 340px)
+  .hero 
+    padding-top: 40px;
+  .hero-subtitle
+     font-size: 30px
+  .hero-title
+    font-size: 60px
+@media (max-width: 260px)
+  .hero 
+    padding-top: 50px;
+  .hero-subtitle
+     font-size: 30px 
+  .hero-title
+    font-size: 45px
